@@ -461,6 +461,34 @@ p.readmore {
   }
 }
 
+/* text */
+.text {
+  padding: 3em 0;
+  text-align: justify;
+
+  .title{
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .author {
+    text-align: right;
+    margin: 1em 0;
+  }
+
+  .superscript{
+    font-size: small;
+
+    &.sup{
+      vertical-align: super;
+    }
+  }
+
+  hr{
+    margin: 3em 0;
+  }
+}
+
 /* footer */
 
 .footer {
