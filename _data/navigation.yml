@@ -5,8 +5,8 @@ main:
     url: "/"
   - title: "WORK"
     sublinks:
-      - title: "2024"
-        url: "/work/2024"
+      - title: "2024 - 2025"
+        url: "/work/2024-2025"
       - title: "2023"
         url: "/work/2023"
       - title: "2021 - 2022"
