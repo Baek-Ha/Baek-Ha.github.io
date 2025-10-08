@@ -17,7 +17,7 @@ body {
     min-height:100%;
     box-sizing: border-box;
     height:auto;
-    padding-bottom: 140px;/*等于或略大于footer的高度*/
+    padding-bottom: 140px;
 }
 
 .site-footer {
@@ -84,6 +84,19 @@ body {
   background-position:0 96%
 }
 
+.logo img {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .nav {
   line-height: $base-line-height;
 
@@ -103,7 +116,7 @@ body {
     margin-top: 1em;
     // margin-left: $dropdown-spacer;
 
-    background-color: white;
+    background-color: transparent;
     // min-width: 160px;
     // box-shadow: $box-shadow;
     z-index: 1;

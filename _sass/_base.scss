@@ -145,7 +145,10 @@ body {
   /* font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif; */
   /* font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-  color: #222; }
+  color: #222; 
+  background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
+  background-attachment: fixed;
+}
 
 
 /* Typography
@@ -459,4 +462,32 @@ blockquote {
   line-height: 1.8rem;
   border-left: 3px solid #D0E5F2;
   font-size: 1.3rem;
-} 
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin: 10px;
+
+  .swiper-pagination-bullet {
+    background-color: #000 !important;
+    opacity: 0.3
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    opacity: 1
+  }
+}

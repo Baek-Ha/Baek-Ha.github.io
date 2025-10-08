@@ -204,13 +204,34 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 
-figure {
-  &.work {
-    margin: 15em 40px;
-  }
+.gallery { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+  figure { 
+    &.work { 
+      margin: 0;
+      width: 150px;
 
-  &.exhibition {
-    margin: 5em 40px;
+      img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+    }
+    } 
+  } 
+}
+
+.gallery-with-caption {
+  figure {
+    &.work {
+      margin: 15em 40px;
+    }
   }
 }
 
